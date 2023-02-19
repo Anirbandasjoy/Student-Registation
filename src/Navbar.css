@@ -11,7 +11,9 @@
   z-index: 1;
   height: 13vh;
 }
-
+.frist{
+  margin-right: 2rem;
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -73,12 +75,12 @@ ul li .extra{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 7rem;
+    top: 13vh;
     left: -100%;
-    width: 50%;
+    width: 40%;
     transition: all 0.5s ease;
     background-color: #222;
-    padding: 4rem;
+    
   }
 
   .navbar-items.active {
@@ -89,6 +91,7 @@ ul li .extra{
     margin-right: 0;
     margin-bottom: 10px;
     padding-bottom: 3rem;
+    padding-top:2rem;
   }
 
   ul li .frist{
