@@ -4,8 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 
+
+
+
 import logo1 from "./logo1.png"
 import { addStudents } from './StudentsSlice';
+
+
+
 
 
 const Addstudent = () => {
@@ -23,9 +29,9 @@ const Addstudent = () => {
 
   }
   return (
-    <div style={{marginTop : "5rem"}}>
+    <div style={{marginTop : "25vh"}}>
       <div>
-          <div  style={{textAlign : "center"}}>
+          <div  style={{textAlign : "center",width : "100%"}}>
             <img src={logo1} alt="logo1" />
           </div>
          <h2 className='rtitle'>Registation Form</h2>
@@ -52,6 +58,9 @@ const Addstudent = () => {
           </div>
           <button className='sumbmitbtn' type="submit">Confrim</button>
         </form>
+        <div>
+        <p style={{textAlign : "center",marginTop : "2rem" ,marginBottom : ".5rem",fontSize : ".7rem"}} className='rtitle'  >Copyright by Anirban das joy  @2023</p>
+        </div>
     </div>
   )
 }

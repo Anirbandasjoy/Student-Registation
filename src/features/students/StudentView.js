@@ -2,8 +2,11 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 
-import logo1 from "./logo1.png"
+
 import { deleteStudents } from './StudentsSlice';
+
+
+
 
 
 const StudentView = () => {
@@ -13,10 +16,7 @@ const dispatch = useDispatch();
     dispatch(deleteStudents(id))
   }
   return (
-    <div style={{marginTop : "5rem"}}>
-        <div  style={{textAlign : "center"}}>
-            <img src={logo1} alt="logo1" />
-          </div>
+    <div style={{marginTop : "20vh"}}>
        <h2 className='rtitle' style={{textAlign : "center",marginBottom : "2rem"}}>List of Student</h2>
        <table>
           <thead>

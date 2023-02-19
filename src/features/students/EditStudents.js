@@ -3,8 +3,14 @@ import { useDispatch } from 'react-redux'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 
+
+
+
 import logo1 from "./logo1.png"
 import { updateStudents } from './StudentsSlice'
+
+
+
 
 
 const EditStudents = () => {
@@ -23,9 +29,9 @@ const EditStudents = () => {
    }
 
   return (
-    <div style={{marginTop : "5rem"}}>
+    <div style={{marginTop : "25vh"}}>
     <div>
-        <div  style={{textAlign : "center"}}>
+        <div  style={{textAlign : "center",width : "100%"}}>
           <img src={logo1} alt="logo1" />
         </div>
        <h2 className='rtitle'>Update Data</h2>
@@ -52,6 +58,9 @@ const EditStudents = () => {
         </div>
         <button className='sumbmitbtn' type="submit">Updata</button>
       </form>
+      <div>
+        <p style={{textAlign : "center",marginTop : "2rem" ,marginBottom : ".5rem",fontSize : ".7rem"}} className='rtitle'  >Copyright by Anirban das joy  @2023</p>
+        </div>
   </div>
   )
 }

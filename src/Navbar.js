@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
+
+
 import "./Navbar.css";
+
+
+
 
 const Navbar = () => {
  const [isOpen, setIsOpen] = useState(false);
@@ -18,15 +24,15 @@ const handleToggle = () => setIsOpen(!isOpen);
         <ul className={isOpen ? "navbar-items active" : "navbar-items" }>
           <li className="navbar-item">
             {/* <a className="frist" href="/">Institute</a> */}
-            <Link  className="frist"  to="/">Institute</Link>
+            <Link  className="frist"  to="/home">INSTITUTE</Link>
           </li>
-          <li className="navbar-item">
-            {/* <a className="second" href="/show-students">Registard-Student</a> */}
-            <Link className="second" to ="/show-students">Registard-Student</Link>
+          <li className="navbar-item second">
+            {/* <a className="" href="/show-students">Registard-Student</a> */}
+            <Link className="second" to ="/show-students">LIST</Link>
           </li>
           <li className="navbar-item ">
             {/* <a className="extra" href="/add-student">Registation</a> */}
-            <Link className="extra" to="/add-student">Registation</Link>
+            <Link className="extra" to="/">REGISTATION</Link>
           </li>
         </ul>
       </div>
