@@ -126,6 +126,9 @@ input:focus {
 .hm{
   text-align: center;
 }
+.nones{
+  display: none;
+}
 @media screen and(max-width:740px) {
   form{
     max-width: 550px;

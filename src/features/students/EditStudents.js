@@ -6,8 +6,38 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import logo1 from "./logo1.png"
 import { updateStudents } from './StudentsSlice'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -20,7 +50,7 @@ const EditStudents = () => {
    const [Name,setName] = useState(location.state.Name);
    const [Roll,setRoll] = useState(location.state.Roll);
    const [Reg,setReg] = useState(location.state.Reg);
-   const [id,setid] = useState(location.state.id);
+   const [id,setId] = useState(location.state.id);
    const hendelSubmites = (event) =>{
     event.preventDefault();
     dispatch(updateStudents({Name,Roll,Reg,id}));
@@ -56,10 +86,20 @@ const EditStudents = () => {
             setReg(e.target.value)
           }} />
         </div>
+       
         <button className='sumbmitbtn' type="submit">Updata</button>
       </form>
+   
       <div>
         <p style={{textAlign : "center",marginTop : "2rem" ,marginBottom : ".5rem",fontSize : ".7rem"}} className='rtitle'  >Copyright by Anirban das joy  @2023</p>
+          <form className='nones'>
+          <div  className='input'>
+          <label htmlFor="Registation number">    </label>
+          <input type="number" id='Reg' name='Reg' value={id} required placeholder='Enter your registation number' onChange={(e) =>{
+            setId(e.target.value)
+          }} />
+        </div>
+          </form>
         </div>
   </div>
   )
